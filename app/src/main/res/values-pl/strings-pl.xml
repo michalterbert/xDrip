@@ -28,6 +28,7 @@
 	<string name="cancel">Anuluj</string>
 	<string name="no">Nie</string>
 	<string name="pref_sensor_location_dont_ask_again"> Nie pytaj ponownie.</string>
+
 	<string name="title_activity_error">"Błąd i Event List"</string>
 	<string name="title_activity_main">Główna aktywność</string>
 	<string name="title_activity_fake_numbers">Fałszywe Numery</string>
@@ -39,6 +40,8 @@
 	<string name="prefs_auto_config_summary">Automatyczna konfiguracja za pomocą kodu kreskowego.</string>
 	<string name="scan_share2_barcode">Skanowanie kodów kreskowych Share</string>
 	<string name="pref_share2_scan_barcode_summary">Lub zeskanować kod kreskowy na odbiorniku share</string>
+
+	<!-- MongoDB Settings -->
 	<string name="pref_title_mongodb">MongoDB</string>
 	<string name="pref_summary_mongodb_enabled">Jeśli używasz MongoLab i Azure to powinno być włączone</string>
 	<string name="pref_title_mongodb_uri">URI</string>
@@ -48,9 +51,12 @@
 	<string name="pref_title_mongodb_collection">Nazwa kolekcji</string>
 	<string name="pref_dialog_mongodb_collection">Wpisz nazwę kolekcji</string>
 	<string name="pref_message_mongodb_collection">Jest to nazwa kolekcji, gdzie będą przechowywane dane CGM</string>
+
 	<string name="pref_title_mongodb_device_status_collection">Urządzenie nazwa kolekcji status</string>
 	<string name="pref_dialog_mongodb_device_status_collection">Wpisz nazwę kolekcji Device status"</string>
 	<string name="pref_message_mongodb_device_status_collection">Jest to nazwa kolekcji, gdzie będą przechowywane informacje o stanie baterii a także inne informacje o urządzeniu</string>
+	
+    <!-- API Settings -->
 	<string name="pref_title_api">Prześlij API (REST)</string>
 	<string name="pref_title_api_enabled">Włączone</string>
 	<string name="pref_summary_api_enabled">REST API stanowi alternatywę dla bezpośredniego przesyłania do MongoDB</string>
@@ -58,35 +64,52 @@
 	<string name="pref_dialog_api_url">Wprowadź główny adres API URL</string>
 	<string name="pref_message_api_url">To tylko główny adres URL, uploader automatycznie dołączy / wpisy na odpowiednim miejscu. API_SECRET na serwerze powinien być taki sam jak yourpassphrase w tym ustawieniu.</string>
 	<string name="pref_default_api_url">https: // yourpassphrase @ {YOUR-SITE} .azurewebsites.net / api / v1 /</string>
+
+	<!-- wifi Settings -->
 	<string name="wifi_recievers_dialog_message">Lista oddzielona przecinkami  ip: port (na przykład 37.142.132.220:50005,37.142.132.220:50010,mongodb://user:pass@ds053958.mongolab.com:53958/db/collection)</string>
 	<string name="wifi_recievers_dialog_title">Wpisz adresy IP i porty odbiorników (w tym adresów MongoDB jeśli potrzebne)</string>
+
+    <!-- Location Settings -->
 	<string name="location_not_found_title">Lokalizacja nie jest Włączona</string>
 	<string name="location_not_found_message">Aby urchomić odnajdywanie urządzeń Bluetooth lokalizacja musi być aktywna. xDrip nie zapisuje swojej lokalizacji więc można ją wyłączyć po udanym powiązaniu.</string>
 	<string name="location_yes">Włączyć</string>
+
+    <!-- broadcast settings -->
 	<string name="pref_title_broadcast_enabled">Nadawaj lokalnie</string>
 	<string name="pref_summary_broadcast_enabled">Włącz lokalną transmisję danych, dzięki czemu inne aplikacje (np. NightWatch) mogą otrzymać nowe wartości</string>
 	<string name="title_activity_share_test">Podziel test</string>
+
+    <!-- pebble settings -->
 	<string name="pref_pebble_trend_watchface">Użyj Pebble Trend Watchface</string>
 	<string name="pref_summary_pebble_trend_watchface">Użyj / Zainstaluj Pebble Trend Watchface (experymentalne)</string>
 	<string name="pref_pebble_display_trend">Wyświetl Trend</string>
 	<string name="pref_summary_display_trend">Pokaż trend BG na tarczy zegarka xDrip Pebble.</string>
 	<string name="pref_pebble_display_high_line">Pokaż linie dla wysokich</string>
 	<string name="pref_pebble_display_low_line">Wyświetl linie dla niskich</string>
+
+
 	<string name="toast_crash">Coś poszło nie tak :( raport został wysłany, aby pomóc rozwiązać problem.</string>
+
 	<string name="taskerConfigInstruction">Wystarczy kliknąć ikonę Tick tutaj, aby potwierdzić. Nie ma potrzeby, aby zmienić ciąg konfiguracji.</string>
 	<string name="taskerConfiguration">Tasker Konfiguracja</string>
 	<string name="finish_preferences_activity">finish_preferences_activity</string>
+	
 	<string name="add_widget">Dodaj widget</string>
 	<string name="title_activity_alert_list">Lista alarmów</string>
 	<string name="speaktreatment">Mów leczenie</string>
+	
 	<string name="title_activity_update">Doatępna jest nowa aktualizacja xDrip+</string>
 	<string name="title_activity_display_qrcode">Udostepnij ustawienia poprzez kod QR</string>
 	<string name="title_activity_send_feed_back">Wyślij odpowiedź do Jamorham</string>
 	<string name="title_activity_maps">Mapa Parakeet</string>
 	<string name="title_activity_display_preferences">Pokaż Preferencje</string>
+	
 	<string name="export_submenu">Funkcje importu / eksportu</string>
+	
 	<string name="action_resend_to_watch">Wyślij ponownie poziom glukozy do zegarka</string>
 	<string name="action_open_watch_setting">Otwórz Ustawienia na Wear</string>
+	<string name="action_sync_watch_db">Zresetuj Wear DB</string>
+
 	<string name="erase">Wymazać</string>
 	<string name="interface_tips_from_start">Wszystkie podpowiedzi pokaż znowu od początku</string>
 	<string name="note_button">Notatka Przycisk</string>
@@ -96,6 +119,8 @@
 	<string name="undo_button">Przycisk Cofnij</string>
 	<string name="showcase_undo">Przycisk Cofnij służy do wycofania wprowadzonych danych dotyczących Leczenia Symulacji, kalibracji i notatek\n\nPo 30 minutach będzie ukryty</string>
 	<string name="add_note">Dodaj notatkę</string>
+    <string name="blood_test">Blood Test</string>
+    <string name="share">Share</string>
 	<string name="title_activity_profile_editor">Edytor profil leczenia</string>
 	<string name="first_use_menu_to_scan">Najpierw użyj menu do skanowania urządzenia BT lub zmień źródło danych w ustawieniach!</string>
 	<string name="first_configure_ip_address">Najpierw skonfiguruj IP adress Wixel-wifi lub URL Parakeet</string>
@@ -125,26 +150,26 @@
 	<string name="cancel_do_nothing">Anuluj - nic nie rób</string>
 	<string name="added">Dodany</string>
 	<string name="checking_for_update">Sprawdzanie aktualizacji ..</string>
-	<string name="signal_missed">Brak Sygnału</string>
-	<string name="space_minutes_ago">" Minuty temu"</string>
+	<string name="signal_missed">Brak sygnału</string>
+	<string name="space_minutes_ago">" Minut(y) temu"</string>
 	<string name="space_minute_ago">" Minuta temu"</string>
 	<string name="show_parakeet_map">Pokaż położenie Parakeet</string>
 	<string name="switch_parakeet_to_setup_mode">Przełączyć Parakeet w tryb serwisowy</string>
-	<string name="view_events_log">Zobacz Event Log</string>
+	<string name="view_events_log">Zobacz dziennik zdarzeń</string>
 	<string name="share_config_via_qr_code">Udostepnij konfiguracje poprzez kod QR</string>
 	<string name="check_for_updated_version">Sprawdź czy jest nowa wersja</string>
 	<string name="send_feedback_to_developer">Wyślij odpowiedź do dewelopera</string>
 	<string name="home_screen">Ekran główny</string>
-	<string name="calibration_graph">Wykres Kalibracji</string>
+	<string name="calibration_graph">Wykres kalibracji</string>
 	<string name="glucose_units">Jednostki glukozy</string>
 	<string name="mmol_or_mgdl_high_and_low">mmol/l lub mg/dl wysokiego i niskiego</string>
-	<string name="general_settings">Podstawowe Ustawienia</string>
+	<string name="general_settings">Podstawowe ustawienia</string>
 	<string name="high_value">Wysoka wartość</string>
 	<string name="low_value">Niska wartość</string>
 	<string name="end_user_license_agreement">Umowa licencyjna użytkownika końcowego</string>
 	<string name="save">Zapisać</string>
-	<string name="view_important_warning">Zobacz Ważne ostrzeżenie</string>
-	<string name="view_google_licenses">Zobacz Licencje Google</string>
+	<string name="view_important_warning">Zobacz ważne ostrzeżenie</string>
+	<string name="view_google_licenses">Zobacz licencje Google</string>
 	<string name="not_for_medical_use">Nie do użytku medycznego - tylko narzędzie badawcze</string>
 	<string name="deel_settings_for_algs">Zaawansowane ustawienia algorytmów</string>
 	<string name="low_level_prediction_values">Wartości przewidujące niski poziom</string>
@@ -183,7 +208,7 @@
 	<string name="carb_absorption_rate">Szybkość wchłaniania węglowodanów</string>
 	<string name="calculate_including_glucose_trend">Oblicz z wykorzystaniem trendu glukozy</string>
 	<string name="use_trend_momentum">Korzystanie tendencja tempa</string>
-	<string name="add_calibration">Dodaj Kalibracje</string>
+	<string name="add_calibration">Dodaj kalibracje</string>
 	<string name="system_status">Status systemu</string>
 	<string name="settings">Ustawienia</string>
 	<string name="calibration_data_table">Tabela kalibracji danych</string>
@@ -195,11 +220,35 @@
 	<string name="run_collector_in_foreground">Uruchom Collector na pierwszym planie</string>
 	<string name="shows_a_persistent_notification">Pokazuje stałe powiadomienie, widoczne na ekranie blokady i zapobiega zabijaniu przez androida procesu.</string>
 	<string name="list_of_receivers">Lista odbiorników</string>
+    <string name="extra_tags_for_logging">Extra tags for logging</string>
+    <string name="extra_tags_dialog_message">The tags entered here will be logged into xDrip. Format is tag:level. Level can be v,d,i. For example bgreading:i,DexCollectionService:v. This tags will be logged with low priority to Error and event list.</string>
+    <string name="extra_tags_dialog_title">Enter more tags to be logged</string>
 	<string name="data_source_settings">Ustawienia źródła danych</string>
 	<string name="smart_watch_features">Inteligentne funkcje zegarka</string>
 	<string name="wear_integration">Integracja z Android Wear</string>
 	<string name="send_data_to_android_wear_watch">Wysyłanie danych do Android Wear Watchface.</string>
 	<string name="android_wear_integration">Integracja z Android Wear</string>
+    <string name="pref_enable_wearG5">Enable Wear Collection Service</string>
+    <string name="pref_summary_enable_wearG5">Connect Wear to BT Collector when phone is out-of-range</string>
+    <string name="pref_force_wearG5">Force Wear Collection Service</string>
+    <string name="pref_summary_force_wearG5">Force phone to use Wear Collection Service</string>
+    <string name="pref_disable_wearG5_on_lowbattery">Disable Force on Low Battery</string>
+    <string name="pref_summary_disable_wearG5_on_lowbattery">Disable Force Wear Collection Service on Wear Low Battery Alert</string>
+    <string name="pref_disable_wearG5_on_missedreadings">Disable Force on Missed Readings</string>
+    <string name="pref_summary_disable_wearG5_on_missedreadings">Disable Force Wear Collection Service on Minutes since last Reading from Wear</string>
+    <string name="pref_disable_wearG5_on_missedreadings_level">Minutes since last Reading from Wear</string>
+    <string name="pref_node_wearG5">Device running Collection Service</string>
+    <string name="pref_summary_node_wearG5">Force phone to use this Wear Collection Service</string>
+
+    <string name="pref_sync_wear_logs">Sync Wear Logs</string>
+    <string name="pref_summary_sync_wear_logs">Send Wear logs to Event Viewer</string>
+    <string name="pref_wear_logs_prefix">Wear Log Prefix</string>
+    <string name="pref_summary_wear_logs_prefix">Prefix used for Wear log entries</string>
+    <string name="pref_show_treatments">Show Treatments</string>
+    <string name="pref_summary_show_treatments">Show Treatment points on graph</string>
+    <string name="pref_use_wear_health">Use Wear Health Data</string>
+    <string name="pref_summary_use_wear_health">Collect and display Step counter when available</string>
+
 	<string name="pebble_integration">Integracja z Pebble</string>
 	<string name="send_data_to_pebble_watchface">Wysyłanie danych do Pebble Watchface.</string>
 	<string name="pebble_watch_integration">Integracja z Pebble Watch</string>
@@ -210,7 +259,7 @@
 	<string name="special_value">Specjalna Wartość</string>
 	<string name="history">Historia</string>
 	<string name="statistics">Statystyka</string>
-	<string name="snooze_alert">Wycisz Alarm</string>
+	<string name="snooze_alert">Wycisz alarm</string>
 	<string name="less_common_settings">Mniej istotne ustawienia</string>
 	<string name="view_recent_errors_warnings">Najnowsze Błędy / ostrzeżenia</string>
 	<string name="other_settings">Inne ustawienia</string>
@@ -275,6 +324,7 @@
 	<string name="disable_all_alerts">Wyłącz wszystkie alarmy</string>
 	<string name="re_enable_all_alerts">Ponownie włączyć wszystkie alerty</string>
 	<string name="update_channel_colon_space">"Aktualizuj kanał "</string>
+    <string name="alert_snoozed_by_watch">Alert snoozed by watch</string>
 	<string name="a_new_version_is_available">Dostępna jest nowa wersja</string>
 	<string name="version_details">Szczegóły wersji</string>
 	<string name="download_now">Pobierz teraz</string>
